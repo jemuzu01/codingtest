@@ -1,3 +1,10 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   text-decoration: underline;
 }
@@ -1103,5 +1110,34 @@ ul.main_nav_list > li > a {
   }
   .fifteenth__section__right {
     gap: 30px;
+  }
+  .fifth__section__right,
+  .third__section__left {
+    padding: 0 20px;
+    text-align: unset;
+  }
+}
+
+@media (max-width: 520px) {
+  .third__section__left__content h3,
+  .fifth__section__right__content h3 {
+    font-size: 24px;
+  }
+  .ninth__section__right img {
+    object-fit: unset;
+    height: unset;
+  }
+  .ninth__section__left h2,
+  .eight__section__right h2 {
+    font-size: 18px;
+  }
+  .work__with__us__section,
+  .hero__banner {
+    height: 400px;
+    padding: 0 20px;
+  }
+  .hero__banner__title > h1 {
+    font-size: 38px;
+    letter-spacing: 8px;
   }
 }
