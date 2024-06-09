@@ -1052,7 +1052,7 @@ ul.main_nav_list > li > a {
   }
   .thirteenth__section__left,
   .thirteenth__section__right {
-    max-width: 100%;
+    max-width: 100% !important;
     margin: 0 !important;
   }
   .thirteenth__section__left img {
@@ -1078,6 +1078,9 @@ ul.main_nav_list > li > a {
   .fifteenth__section__left {
     max-width: 100%;
     justify-content: center;
+  }
+  .sixth__section__left {
+    max-width: 100% !important;
   }
   .fifteenth__section__left img {
     object-fit: unset !important;
