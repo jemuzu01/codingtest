@@ -1121,7 +1121,7 @@ ul.main_nav_list > li > a {
 @media (max-width: 520px) {
   .third__section__left__content h3,
   .fifth__section__right__content h3 {
-    font-size: 24px;
+    font-size: 18px;
   }
   .ninth__section__right img {
     object-fit: unset;
@@ -1139,5 +1139,19 @@ ul.main_nav_list > li > a {
   .hero__banner__title > h1 {
     font-size: 38px;
     letter-spacing: 8px;
+  }
+  .eight__section__left img,
+  .logo__section__container {
+    object-fit: unset;
+    height: unset;
+  }
+  .thirteenth__section__right__icon,
+  .fourteenth__section__left__icon {
+    flex-direction: column;
+  }
+  .thirteenth__section__right__icon img,
+  .fourteenth__section__left__icon img {
+    width: 128px;
+    height: 60px;
   }
 }
