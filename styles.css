@@ -1099,6 +1099,7 @@ ul.main_nav_list > li > a {
   .main__bottom__footer {
     gap: 20px;
     flex-direction: column;
+    padding: 20px;
   }
   .website__logo {
     justify-content: space-between;
