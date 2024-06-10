@@ -7,11 +7,34 @@
     <title>HTML + CSS</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class='side__nav__container'> 
+        <div class='side__nav__responsive'>
+              <div class='close__side__nav'>
+                 <i class="fa-solid fa-xmark"></i>
+              </div>
+              <ul class='side__nav__responsive__list'>
+                <li><a href='#'>Meet the team</a></li>
+                <li><a href='#'>Search For Homes</a></li>
+                <li><a href='#'>Our Communities</a></li>
+                <li><a href='#'>Home Evaluation</a></li>
+                <li><a href='#'>Services</a></li>
+                <li><a href='#'>Home Across Amerrica</a></li>
+                <li><a href='#'>Testimonial</a></li>
+                <li><a href='#'>Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
     <div class='main__header'>
       <div class='website__logo'>
           <div class='logo__container'>
@@ -29,15 +52,20 @@
                   <li><a href='#'>Contact Us</a></li>
               </ul>
           </div>
-          <div class='main__header__btn'>
-            <button>Book An Appointment</button>
-        </div>
+          <div class='main__nav__right'>
+              <div class='main__header__btn'>
+                <button>Book An Appointment</button>
+            </div>
+            <div class='main__header__burger'>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+           </div>
       </div>
     </div>
     <!-- hero__banner -->
       <div class='hero__banner'>
         <div class='hero__banner__container'>
-            <div class='hero__banner__title'>
+            <div class='hero__banner__title' data-aos="fade-right">
                 <h1>SERVICES</h1>
             </div>
             <div class='banner__sub__title'>
@@ -67,7 +95,6 @@
                 <img src='page-3.jpg'>
               </div>
                 <div class='second__section__cards'>
-
                   <!-- first card -->
                   <div class='section__card'>
                       <div class='section__card__left'>
@@ -105,15 +132,15 @@
                  <div class='section__card'>
                   <div class='section__card__left'>
                         <div class='section__card__icon'>
-                          <img src='image-007.jpg' alt>
+                          <img src='image-009.png' alt>
                         </div>
                    </div>   
                    <div class='section__card__right'>
                         <div class='section__card__title'>
-                          <h5 class='gold-color'>Responsive</h5>
+                          <h5 class='gold-color'>Virtual Tour</h5>
                         </div>
                         <div class='section__card__text'>
-                          <p>I am always available via phone, text, or email.</p>
+                          <p>Let's make your home stand out with a high quality virtual tour.</p>
                         </div>
                   </div>   
               </div>
@@ -121,15 +148,15 @@
                <div class='section__card'>
                 <div class='section__card__left'>
                       <div class='section__card__icon'>
-                        <img src='image-007.jpg' alt>
+                        <img src='image-013.png' alt>
                       </div>
                  </div>   
                  <div class='section__card__right'>
                       <div class='section__card__title'>
-                        <h5 class='gold-color'>Responsive</h5>
+                        <h5 class='gold-color'>Photography</h5>
                       </div>
                       <div class='section__card__text'>
-                        <p>I am always available via phone, text, or email.</p>
+                        <p>Beatiful, high-end photography is a central part of our marketing plan for your property.</p>
                       </div>
                 </div>   
             </div>
@@ -140,7 +167,7 @@
    <!--Third Section -->
    <div class='third__section'>
       <div class='third__section__left'>
-          <div class='third__section__left__content'>
+          <div class='third__section__left__content' data-aos="fade-right">
                 <h3>Decor Guidance</h3>
           </div>
       </div>
@@ -160,7 +187,7 @@
         </div>   
     </div>
     <div class='fourth__section__right'>
-        <div class='fourth__section__right__content'>
+        <div class='fourth__section__right__content' data-aos="fade-left">
           <h3>My Staging Expertise</h3>
           <ul>
               <li>Unclutter and organize your home</liv>
@@ -179,7 +206,7 @@
          </div>   
     </div>
     <div class='fifth__section__right'>
-        <div class='fifth__section__right__content'>
+        <div class='fifth__section__right__content' data-aos="fade-left">
           <h3>Intentional ​​​​​Layout</h3>
         </div>
     </div>
@@ -188,7 +215,7 @@
   <!--sixth Section -->
   <div class='sixth__section'>
     <div class='sixth__section__left'>
-        <div class='sixth__section__left__content'>
+        <div class='sixth__section__left__content' data-aos="fade-right">
               <ul>
                 <li>Unclutter and organize your home</liv>
                 <li>Neatly arrange drawers and cabinets</liv>
@@ -415,7 +442,8 @@
     </div>
     <div class='fourteenth__section'>
           <div class='fourteenth__section__left'>
-                 <p>Through our international affiliations, we have a strong presence in over 50 countries. 
+                <p>We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing. </p>
+                <p>Through our international affiliations, we have a strong presence in over 50 countries. 
                 Our luxury listings are sent to prominent international real estate sites, 
                 reaching over 70 million potential buyers and investors worldwide through our relationships with:</p>
                 <div class='fourteenth__section__left__icon'>
@@ -423,8 +451,6 @@
                     <img src='image-069.png' alt=''>
                     <img src='image-070.png' alt=''>
                 </div>
-            <p>We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing. </p>
-            
           </div>
           <div class='fourteenth__section__right'>
             <img src='edited-page-20.png' alt=''>
@@ -436,58 +462,13 @@
           <img src='edited-p25.png' alt=''>
         </div>
             <div class='fifteenth__section__right'>
-                    <div class='section__card'>
-                      <div class='section__card__left'>
-                            <div class='section__card__icon'>
-                              <img src='image-007.jpg' alt>
-                            </div>
-                      </div>   
-                      <div class='section__card__right'>
-                            <div class='section__card__title'>
-                              <h5 class='gold-color'>Responsive</h5>
-                            </div>
-                            <div class='section__card__text'>
-                              <p>I am always available via phone, text, or email.</p>
-                            </div>
-                      </div>   
-                  </div>
-                  <div class='section__card'>
-                    <div class='section__card__left'>
-                          <div class='section__card__icon'>
-                            <img src='image-007.jpg' alt>
-                          </div>
-                    </div>   
-                    <div class='section__card__right'>
-                          <div class='section__card__title'>
-                            <h5 class='gold-color'>Responsive</h5>
-                          </div>
-                          <div class='section__card__text'>
-                            <p>I am always available via phone, text, or email.</p>
-                          </div>
-                    </div>   
-                </div>
-                <div class='section__card'>
-                  <div class='section__card__left'>
-                        <div class='section__card__icon'>
-                          <img src='image-007.jpg' alt>
-                        </div>
-                  </div>   
-                  <div class='section__card__right'>
-                        <div class='section__card__title'>
-                          <h5 class='gold-color'>Responsive</h5>
-                        </div>
-                        <div class='section__card__text'>
-                          <p>I am always available via phone, text, or email.</p>
-                        </div>
-                  </div>   
-              </div>
               <div class='section__card'>
                 <div class='section__card__left'>
                       <div class='section__card__icon'>
                         <img src='image-007.jpg' alt>
                       </div>
-                </div>   
-                <div class='section__card__right'>
+                 </div>   
+                 <div class='section__card__right'>
                       <div class='section__card__title'>
                         <h5 class='gold-color'>Responsive</h5>
                       </div>
@@ -495,6 +476,55 @@
                         <p>I am always available via phone, text, or email.</p>
                       </div>
                 </div>   
+            </div>
+
+            <!-- second card -->
+            <div class='section__card'>
+              <div class='section__card__left'>
+                    <div class='section__card__icon'>
+                      <img src='image-011.jpg' alt>
+                    </div>
+               </div>   
+               <div class='section__card__right'>
+                    <div class='section__card__title'>
+                      <h5 class='gold-color'>Syndication</h5>
+                    </div>
+                    <div class='section__card__text'>
+                      <p>I market your property locally, nationally, and internationally.</p>
+                    </div>
+              </div>   
+          </div>
+           <!-- second card -->
+           <div class='section__card'>
+            <div class='section__card__left'>
+                  <div class='section__card__icon'>
+                    <img src='image-009.png' alt>
+                  </div>
+             </div>   
+             <div class='section__card__right'>
+                  <div class='section__card__title'>
+                    <h5 class='gold-color'>Virtual Tour</h5>
+                  </div>
+                  <div class='section__card__text'>
+                    <p>Let's make your home stand out with a high quality virtual tour.</p>
+                  </div>
+            </div>   
+        </div>
+         <!-- second card -->
+         <div class='section__card'>
+          <div class='section__card__left'>
+                <div class='section__card__icon'>
+                  <img src='image-013.png' alt>
+                </div>
+           </div>   
+           <div class='section__card__right'>
+                <div class='section__card__title'>
+                  <h5 class='gold-color'>Photography</h5>
+                </div>
+                <div class='section__card__text'>
+                  <p>Beatiful, high-end photography is a central part of our marketing plan for your property.</p>
+                </div>
+          </div>   
             </div>
         </div>
     </div>
@@ -556,5 +586,9 @@
                 <img src='socials.png' alt=''> 
              </div>
        </div>
+
+       <script src="script.js"></script>
+       <!-- JavaScript -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
