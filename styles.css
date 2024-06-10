@@ -1278,7 +1278,8 @@ ul.main_nav_list > li > a {
   .section__card__icon {
     height: 90px;
     width: 100%;
-    }
+  }
   .section__card__text p {
     font-size: 13px;
   }
+}
