@@ -17,6 +17,17 @@ body {
   height: 50px;
   width: 50px;
 }
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
 .side__nav__responsive {
   width: 100%;
   max-width: 400px;
@@ -31,6 +42,7 @@ body {
   align-content: center;
   align-items: center;
   justify-content: center;
+  animation: 3s slide-right;
 }
 .hide__side__nav {
   display: none;
@@ -50,6 +62,9 @@ ul.side__nav__responsive__list {
   flex-direction: column;
   gap: 30px;
   padding: 20px;
+}
+ul.side__nav__responsive__list > li:hover {
+  border-bottom: 1px white solid;
 }
 ul.side__nav__responsive__list > li > a {
   font-size: 18px;
@@ -110,6 +125,12 @@ ul.main_nav_list {
   list-style: none;
   padding: 0;
   gap: 20px;
+}
+ul.main_nav_list > li.active {
+  border-bottom: 1px #fff solid;
+}
+ul.main_nav_list > li:hover {
+  border-bottom: 1px #fff solid;
 }
 ul.main_nav_list > li > a {
   font-size: 12px;
@@ -1033,6 +1054,16 @@ ul.main_nav_list > li > a {
     display: block;
   }
 }
+@media (max-width: 1297px) {
+  .section__card {
+    max-width: 48%;
+  }
+}
+@media (max-width: 993px) {
+  .section__card {
+    max-width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .section__card {
     max-width: 100% !important;
@@ -1238,5 +1269,8 @@ ul.main_nav_list > li > a {
   .fourteenth__section__left__icon img {
     width: 128px;
     height: 60px;
+  }
+  .side__nav__responsive {
+    max-width: 100%;
   }
 }
