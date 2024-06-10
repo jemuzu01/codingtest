@@ -1055,13 +1055,15 @@ ul.main_nav_list > li > a {
 }
 @media (max-width: 1297px) {
   .section__card {
-    max-width: 100%;
+    max-width: 48% !important;
+  }
+  .fifteenth__section__right > .section__card {
+    max-width: 100% !important;
   }
 }
 @media (max-width: 768px) {
   .section__card {
     max-width: 100% !important;
-    paddin: 0 !important;
   }
   .fourth__section__left {
     display: none;
