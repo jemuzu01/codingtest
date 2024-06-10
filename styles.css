@@ -1055,11 +1055,6 @@ ul.main_nav_list > li > a {
 }
 @media (max-width: 1297px) {
   .section__card {
-    max-width: 48%;
-  }
-}
-@media (max-width: 993px) {
-  .section__card {
     max-width: 100%;
   }
 }
