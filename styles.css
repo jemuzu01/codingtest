@@ -316,7 +316,6 @@ ul.main_nav_list > li > a {
 .section__card__icon {
   height: 150px;
   width: 100%;
-  display: fle;
 }
 .section__card__icon img {
   object-fit: cover;
@@ -573,7 +572,7 @@ ul.main_nav_list > li > a {
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  padding: 0 24px;
+  padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   background: #ffffff;
 }
@@ -617,7 +616,7 @@ ul.main_nav_list > li > a {
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  padding: 10px 24px;
+  padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   background: #ffffff;
 }
@@ -1273,4 +1272,13 @@ ul.main_nav_list > li > a {
   .side__nav__responsive {
     max-width: 100%;
   }
-}
+  .section__card__right {
+    gap: 10px;
+  }
+  .section__card__icon {
+    height: 90px;
+    width: 100%;
+    }
+  .section__card__text p {
+    font-size: 13px;
+  }
